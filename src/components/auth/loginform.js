@@ -23,7 +23,7 @@ export default class Login extends Component {
  handleChange(event) {
    const value = event.target.value
    const id = event.target.id
-   this.Setstate[id] = value
+   this.setState[id] = value
  }
  handleSubmit(event) {
    event.preventDefault()

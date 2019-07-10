@@ -1,11 +1,18 @@
 import React from 'react'
 
-export default function Blogpost() {
-    return (
-        <div>
-            <h2>Programming</h2>
-            <p>looii tyuui tyyuii</p>
-            <p>King</p>
-        </div>
-    )
+export default function Blogpost(props) {
+  return (
+    <div>
+      <h2>{props.authorName}</h2>
+      <h2>{props.publicationTitle}</h2>
+      <h2>{props.body}</h2>
+    </div>
+  )
 }
+
+
+
+
+
+
+
