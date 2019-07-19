@@ -23,14 +23,15 @@ export default class Login extends Component {
  handleChange(event) {
    const value = event.target.value
    const id = event.target.id
-   this.setState[id] = value
+   this.state[id] = value
  }
  handleSubmit(event) {
    event.preventDefault()
+   console.log(this.state)
    axios.post('http://localhost:8080/login',this.state)
    .then(function (response) {
      if (response.data.status) {
-       alert('logged in')
+       localStorage.setItem('user',response.data.userDetails)
      }
      else{
        alert('wrong details')
@@ -52,12 +53,12 @@ export default class Login extends Component {
          <h1>SIGN IN TO YOUR ACCOUNT</h1>
          <Form onSubmit={this.handleSubmit}>
            <Form.Group controlId="email">
-             <Form.Label class='Label'>Email address</Form.Label>
-             <Form.Control onChange={this.handleChange} type="email" placeholder="Enter email" />
+             <Form.Label className='Label'>Email address</Form.Label>
+             <Form.Control onChange={this.handleChange} type="email" placeholder="Enter email"  />
            </Form.Group>
            <Form.Group controlId="password">
-             <Form.Label class='Label'>Password</Form.Label>
-             <Form.Control onChange={this.handleChange} type="password" placeholder="Password" />
+             <Form.Label className='Label'>Password</Form.Label>
+             <Form.Control onChange={this.handleChange} type="password" placeholder="Password"  />
            </Form.Group>
            <Button variant="primary" type="submit" block>
              Submit

@@ -30,7 +30,7 @@ export default class signup extends React.Component {
   handleChange(event){
     const value = event.target.id
     const id = event.target.id
-    this.setState[id] = value
+    this.state[id] = value
   }
 
   handleSubmit(event){
