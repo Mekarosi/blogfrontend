@@ -9,7 +9,7 @@ export default function Layout(props) {
 
                 {!localStorage.getItem('user') && <ul>
                     <li><a href='/login'>Login</a></li>
-                    <li><a href='/signup'>Signup</a></li>
+                    <li><a href='/signup'>Sign-Up</a></li>
                     <li><a href='/blog'>Blog</a></li>
                 </ul>}
 
@@ -17,7 +17,7 @@ export default function Layout(props) {
                 {localStorage.getItem('user') &&   <ul>
                     <li><a href='/blog'>Blog</a></li>
                     <li><a href='/publishpost'>Publishpost</a></li>
-                    <li><a href='/login'>Signout</a></li>
+                    <li><a href='/login'>Sign-Out</a></li>
                 </ul>}
             </nav>
             {props.children}
