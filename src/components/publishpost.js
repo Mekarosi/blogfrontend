@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { component } from 'react'
 import Layout from './layout';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -62,7 +62,7 @@ export default class Publishpost extends React.Component {
                      <Form.Control size= "lg" type="text" name="publicationTitle" value={this.state.publicationTitle} onChange={this.handleChange}  placeholder="Publication Title" />
                     </Form.Group> 
                      
-                     <Form.Control as="textarea" rows="5" name="body" value={this.state.body} onChange={this.handleChange} placeholder="Story...."/>
+                     <Form.Control as="textarea"  name="body" value={this.state.body} onChange={this.handleChange} placeholder="Story...."/>
                      
                      <br/>
                      <Button variant="primary" type="submit" >Publish Post</Button>
