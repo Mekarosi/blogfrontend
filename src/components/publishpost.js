@@ -17,9 +17,6 @@ export default class Publishpost extends React.Component {
              date: new Date()
 
         };
-
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
     }
     
 
@@ -35,6 +32,7 @@ export default class Publishpost extends React.Component {
 
       handleSubmit = async event => {
         event.preventDefault();
+
         axios.post("http://localhost:8080/publishpost", this.state)
             .then(response => {
                 console.log(response);
@@ -52,21 +50,21 @@ export default class Publishpost extends React.Component {
         return (
             <Layout>
 
-                <div>
-                    <form onSubmit ={this.handleSubmit}>
+                <div className="publishpost">
+                    <Form onSubmit ={this.handleSubmit}>
                     <Form.Group controlId="authorName">
-                     <Form.Control size="lg" type="text" name="authorName" value={this.state.authorName} onChange={this.handleChange}  placeholder="Enter Author's Name" />
+                    <Form.Control className="authorName" size="lg" type="text" name="authorName" value={this.state.authorName} onChange={this.handleChange}  placeholder="Enter Author's Name" />
                     </Form.Group>
 
                     <Form.Group controlId="publicationTitle">
-                     <Form.Control size= "lg" type="text" name="publicationTitle" value={this.state.publicationTitle} onChange={this.handleChange}  placeholder="Publication Title" />
+                     <Form.Control className="publicationTitle" size= "lg" type="text" name="publicationTitle" value={this.state.publicationTitle} onChange={this.handleChange}  placeholder="Publication Title" />
                     </Form.Group> 
                      
-                     <Form.Control as="textarea"  name="body" value={this.state.body} onChange={this.handleChange} placeholder="Story...."/>
+                     <Form.Control className="textarea" as="textarea"  name="body" value={this.state.body} onChange={this.handleChange} placeholder="Story...."/>
                      
                      <br/>
-                     <Button variant="primary" type="submit" >Publish Post</Button>
-                     </form>
+                     <Button onClick={this.handleSubmit} className="Pbutton" variant="primary" type="submit" >Publish Post</Button>
+                     </Form>
                 </div>
 
             </Layout>

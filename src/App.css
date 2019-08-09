@@ -24,11 +24,13 @@
 }
 #container{
 
- padding: 20px 30px;
+  padding: 20px 30px; 
   width: 450px;
-  box-shadow: 2px 1px 1px 2px #b8bcbd;
-  background-color: whitesmoke;
-  
+  box-shadow: 1px solid burlywood;
+  background-color: rgb(233, 215, 215);
+  margin-top: 20px; 
+  margin-bottom: 40px; 
+  margin: auto;
 }
 
 .nav ul{
@@ -39,6 +41,8 @@
 
 .nav li{
   margin-right: 80px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .nav{
@@ -48,16 +52,26 @@
 
 .nav h1{
 float: left;
+margin-bottom: 50px;
 }
   
 .Label{
   color: rgb(37, 21, 21);
 } 
 
-.textarea {
-  height: 300px;
-  width: 300px;
+
+
+.publicationTitle{
   margin-top: 40px;
+
+} 
+
+.textarea {
+  margin-top: 40px;
+} 
+
+.Pbutton{
+  margin-top: 30px;
 }
 
 .mb-3{
@@ -71,6 +85,23 @@ h1{
   color: rgb(77, 38, 38);
   text-align: center;
 }
+
+.publishpost{
+  width: 800px;
+  margin-top: 80px; 
+  margin-bottom: 40px;
+  background-color: rgb(233, 215, 215);
+  padding: 80px 80px;
+  box-shadow: 1px solid burlywood;
+  margin: auto;
+  
+}
+
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
