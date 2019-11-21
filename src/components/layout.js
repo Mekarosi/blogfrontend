@@ -4,7 +4,7 @@ export default function Layout(props) {
     <div>
       <nav className='nav'>
         <h1>
-          <a href='/'> Amarablog</a>
+          <a href='/'> Universal Chess Blog</a>
         </h1>
         <ul>
           <li>
