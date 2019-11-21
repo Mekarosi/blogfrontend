@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Layout from '../Model/layout';
+import Layout from '../layout';
 import Alert from 'react-bootstrap/Alert';
 const axios = require('axios');
 export default class Signup extends React.Component {

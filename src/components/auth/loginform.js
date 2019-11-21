@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-// import Layout from '../Model/layout';
+import Layout from '../layout';
 const axios = require('axios');
 export default class Login extends Component {
   constructor(props) {
