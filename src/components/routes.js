@@ -4,12 +4,12 @@ import Signup from '../components/auth/signup';
 import Loginform from '../components/auth/loginform';
 import Blog from '../components/blog';
 // import Publishpost from '../Components/publishpost';
-// import Join from '../Components/join';
+import Join from '../components/join';
 const Router = () => {
   return (
     <div>
       <R>
-        {/* <Route path='/join' component={Join}></Route> */}
+        <Route path='/join' component={Join}></Route>
         <Route path='/blog' component={Blog}></Route>
         <Route path='/login' component={Loginform}></Route>
         <Route path='/signup' component={Signup}></Route>
