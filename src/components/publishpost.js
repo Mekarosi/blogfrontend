@@ -27,11 +27,11 @@ export default class PublishPost extends Component {
       .post('http://localhost:8080/publishpost', this.state)
       .then(response => {
         console.log(response);
-        alert(`Post saved saved.`);
+        alert(`Post saved.`);
       })
       .catch(error => {
         console.log(error);
-        alert(`Error encountered in post`);
+        alert(`Error encountered`);
       });
   };
   render() {

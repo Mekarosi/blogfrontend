@@ -10,11 +10,11 @@ const Router = () => {
   return (
     <div>
       <R>
+        <Route path='/' component={Homepage}></Route>
         <Route path='/join' component={Join}></Route>
         <Route path='/blog' component={Blog}></Route>
         <Route path='/login' component={Loginform}></Route>
         <Route path='/signup' component={Signup}></Route>
-        <Route path='/' component={Homepage}></Route>
         <Route path='/publishpost' component={Publishpost}></Route>
       </R>
     </div>
