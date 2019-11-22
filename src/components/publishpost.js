@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from '../Components/Model/layout';
+import Layout from './layout';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 const axios = require('axios');
@@ -38,7 +38,6 @@ export default class PublishPost extends Component {
     return (
       <Layout>
         <div className='publishPost'>
-          {/* <div className="App"> */}
           <form onSubmit={this.handleSubmit}>
             <Form.Group controlId='title'>
               <Form.Control
@@ -74,7 +73,6 @@ export default class PublishPost extends Component {
             </Button>
           </form>
         </div>
-        {/* </div> */}
       </Layout>
     );
   }

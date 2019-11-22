@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Layout from '../layout';
 const axios = require('axios');
+
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +40,7 @@ export default class Login extends Component {
       <Layout>
         <div className='App-header'>
           <div id='container'>
-            <h1>SIGN IN TO YOUR ACCOUNT</h1>
+            <h1>LOGIN TO YOUR ACCOUNT</h1>
             <Form onSubmit={this.handleSubmit}>
               <Form.Group controlId='email'>
                 <Form.Label className='Label'>Email address</Form.Label>

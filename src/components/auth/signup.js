@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Layout from '../layout';
 import Alert from 'react-bootstrap/Alert';
 const axios = require('axios');
+
 export default class Signup extends React.Component {
   constructor(props) {
     super(props);

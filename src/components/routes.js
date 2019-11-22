@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as R, Route } from 'react-router-dom';
 import Signup from '../components/auth/signup';
 import Loginform from '../components/auth/loginform';
+import Homepage from '../components/homepage';
 import Blog from '../components/blog';
-// import Publishpost from '../Components/publishpost';
+import Publishpost from '../components/publishpost';
 import Join from '../components/join';
 const Router = () => {
   return (
@@ -13,7 +14,8 @@ const Router = () => {
         <Route path='/blog' component={Blog}></Route>
         <Route path='/login' component={Loginform}></Route>
         <Route path='/signup' component={Signup}></Route>
-        {/* <Route path='/publishpost' component={Publishpost}></Route> */}
+        <Route path='/' component={Homepage}></Route>
+        <Route path='/publishpost' component={Publishpost}></Route>
       </R>
     </div>
   );
