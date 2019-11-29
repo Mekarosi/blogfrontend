@@ -68,6 +68,16 @@ export default class PublishPost extends Component {
                 placeholder='Author'
               />
             </Form.Group>
+            <Form.Group controlId='date'>
+              <Form.Control
+                type='date'
+                name='date'
+                value={this.state.date}
+                onChange={this.handleChange}
+                placeholder='Date'
+              />
+            </Form.Group>
+
             <Button variant='primary' type='submit'>
               Publish Post
             </Button>

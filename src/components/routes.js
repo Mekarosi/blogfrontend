@@ -10,7 +10,7 @@ const Router = () => {
   return (
     <div>
       <R>
-        <Route path='/' component={Homepage}></Route>
+        <Route path='/' exact component={Homepage}></Route>
         <Route path='/join' component={Join}></Route>
         <Route path='/blog' component={Blog}></Route>
         <Route path='/login' component={Loginform}></Route>
