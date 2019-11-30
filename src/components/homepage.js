@@ -16,8 +16,8 @@ export default class Homepage extends Component {
           <img
             src={chessBoard}
             alt='chess board'
-            height='500px'
-            width='800px'
+            height='800px'
+            width='1200px'
           ></img>
         </div>
       </Layout>

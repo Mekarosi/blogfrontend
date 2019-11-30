@@ -1,5 +1,6 @@
 import React from 'react';
 import Blogpost from './blogpost';
+import Layout from '../components/layout';
 const axios = require('axios');
 export default class Blog extends React.Component {
   constructor(props) {
@@ -16,17 +17,19 @@ export default class Blog extends React.Component {
   }
   render() {
     return (
-      <div>
-        {this.state.blogpost.map(post => {
-          return (
-            <Blogpost
-              authorName={post.authorName}
-              publicationTitle={post.publicationTitle}
-              body={post.body}
-            />
-          );
-        })}
-      </div>
+      <Layout>
+        <div>
+          {this.state.blogpost.map(post => {
+            return (
+              <Blogpost
+                authorName={post.authorName}
+                publicationTitle={post.publicationTitle}
+                body={post.body}
+              />
+            );
+          })}
+        </div>
+      </Layout>
     );
   }
 }

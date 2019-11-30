@@ -209,6 +209,8 @@ h5 {
   display: inline-flex;
   width: 2000px;
   height: 800px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 textarea.form-control {
   height: 20em;
