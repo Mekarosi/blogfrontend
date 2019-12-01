@@ -1,32 +1,3 @@
-.App {
-  text-align: center;
-  /* background-color: #B8BCBD; */
-  /* border: 50px;
-  display: inline-flex;
-  width: 2000px;
-  height: 500px; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 50px;
-   width: 450px;
-   line-height: 50px; */
-}
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 .nav ul {
   display: flex;
   list-style: none;
@@ -75,23 +46,25 @@ h1 {
     transform: rotate(360deg);
   }
 }
-.divstyle {
+.blogstyle {
   line-height: 20px;
-  background-color: grey;
+  background-color: rgb(236, 226, 226);
   text-align: left;
   display: block;
-  padding: 50px 50px;
+  padding: 20px 20px;
+  margin-left: 200px;
+  margin-right: 200px;
   width: 1000px;
-  box-shadow: 2px 1px 1px 2px black;
-  border: #b8bcbd;
+  box-shadow: 2px 1px 1px 2px rgb(223, 215, 215);
+  border: #0a0a0a;
 }
-.publishPost {
+/* .publishPost {
   background-color: #b8bcbd;
   border: 50px;
   display: inline-flex;
   width: 2000px;
   height: 800px;
-}
+} */
 textarea.form-control {
   height: 20em;
   width: 50em;
@@ -106,20 +79,6 @@ textarea.form-control {
   margin-top: 50px;
 }
 
-.App {
-  text-align: center;
-  /* background-color: #B8BCBD; */
-  /* border: 50px;
-  display: inline-flex;
-  width: 2000px;
-  height: 500px; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 50px;
-   width: 450px;
-   line-height: 50px; */
-}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -193,16 +152,7 @@ h5 {
     transform: rotate(360deg);
   }
 }
-.divstyle {
-  line-height: 20px;
-  background-color: grey;
-  text-align: left;
-  display: block;
-  padding: 50px 50px;
-  width: 1000px;
-  box-shadow: 2px 1px 1px 2px black;
-  border: #b8bcbd;
-}
+
 .publishPost {
   background-color: #b8bcbd;
   border: 50px;
@@ -224,4 +174,8 @@ textarea.form-control {
   line-height: 1.5;
   border-radius: 0.3rem;
   margin-top: 50px;
+}
+
+img {
+  margin-left: 0px;
 }

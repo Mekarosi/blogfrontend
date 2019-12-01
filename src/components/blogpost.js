@@ -1,11 +1,15 @@
 import React from 'react';
 export default function Blogpost(props) {
   return (
-    <div className='divstyle'>
-      <h1>{props.publicationTitle}</h1> <br />
-      <h3>{props.body}</h3>
-      <br />
-      <h4>{props.authorName} </h4>
+    <div className='container'>
+      <div className='blogstyle'>
+        <h4>{props.publicationTitle}</h4> <br />
+        <h5>{props.body}</h5>
+        <br />
+        <h5>
+          <strong>{props.authorName}</strong>{' '}
+        </h5>
+      </div>
     </div>
   );
 }
