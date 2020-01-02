@@ -9,6 +9,7 @@ export default function Blogpost(props) {
         <h5>
           <strong>{props.authorName}</strong>{' '}
         </h5>
+        <h5>{props.dateS}</h5>
       </div>
     </div>
   );

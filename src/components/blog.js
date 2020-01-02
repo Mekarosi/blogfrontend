@@ -25,6 +25,7 @@ export default class Blog extends React.Component {
                 authorName={post.authorName}
                 publicationTitle={post.publicationTitle}
                 body={post.body}
+                date={post.date}
               />
             );
           })}
